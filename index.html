@@ -301,12 +301,12 @@
                 <div class="mb-5">
                     <h4 class="font-semibold mb-2">Ukuran & Harga:</h4>
                     <div>
-                        <span class="option" data-ukuran="All Size" data-ld="110 cm" data-pb="135 cm" data-harga="145000">
+                        <span class="option" data-ukuran="All Size" data-ld="105 cm" data-pb="65 cm" data-harga="77900">
                             All Size<br>
                             <small>LD 105 cm | PB 65 cm</small><br>
                             <strong>Rp 77.900</strong>
                         </span>
-                        <span class="option" data-ukuran="Big Size" data-ld="120 cm" data-pb="140 cm" data-harga="165000">
+                        <span class="option" data-ukuran="Big Size" data-ld="120 cm" data-pb="68 cm" data-harga="87900">
                             Big Size<br>
                             <small>LD 120 cm | PB 68 cm</small><br>
                             <strong>Rp 87.900</strong>
@@ -332,7 +332,7 @@
                 </div>
 
                 <div class="flex gap-3">
-                    <button class="w-full bg-primary hover:bg-dark text-white py-3 rounded-md text-lg font-medium tambah-keranjang" data-id="1" data-nama="Gamis Ceruty Premium">
+                    <button class="w-full bg-primary hover:bg-dark text-white py-3 rounded-md text-lg font-medium tambah-keranjang" data-id="1" data-nama="Vanya Blouse">
                         <i class="fa fa-cart-plus mr-2"></i>Tambah ke Keranjang
                     </button>
                 </div>
@@ -914,7 +914,7 @@
             let pesan = `*PEMESANAN BARU*\n`;
             pesan += `=====================\n`;
             pesan += `*Nomor Faktur:* ${invoice}\n`;
-            pesan += `*Status:* PRE ORDER\n\n`;
+            pesan += `*Status:* PERMINTAAN ORDER\n\n`;
             pesan += `*DATA PEMBELI:*\n`;
             pesan += `Nama: ${formData.get('nama')}\n`;
             pesan += `WA: ${formData.get('wa')}\n`;
@@ -934,7 +934,7 @@
             pesan += `*Ketentuan:* Pengiriman 7-14 hari kerja setelah pembayaran dikonfirmasi.\n\n`;
             pesan += `Terima kasih telah memesan.`;
 
-            const waNumber = '6281298765432'; // Ganti nomor WA kamu
+            const waNumber = '6282225124561'; // Ganti nomor WA kamu
             const waUrl = `https://wa.me/${waNumber}?text=${encodeURIComponent(pesan)}`;
             window.open(waUrl, '_blank');
 
